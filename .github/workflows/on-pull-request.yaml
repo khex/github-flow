@@ -1,7 +1,9 @@
 # Controls when the workflow will run
 name: On Pull Request
 
-# docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
+# Workflow syntax https://bit.ly/46gUFL0
+# Dropping the restrictions on pushes entirely means
+# triggering on all of them (commits, and also tags):
 on:
   push:
   pull_request:
