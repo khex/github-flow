@@ -1,11 +1,10 @@
 # Controls when the workflow will run
 name: On Pull Request
 
-on:
-  push:
-  pull_request:
-    branches:
-      - '**'
+# docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
+on: [ push, pull_request ]
+  branches:
+    - '**'
 
 jobs:
 
